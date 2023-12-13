@@ -8,10 +8,10 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Lab 4.2</p>
-    <p>Faculty of Computer Science</p>
-    <p>University of A Coruña</p>
+  # more_info: >
+  #   <p>Lab 4.2</p>
+  #   <p>Faculty of Computer Science</p>
+  #   <p>University of A Coruña</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
