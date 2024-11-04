@@ -8,3 +8,11 @@
 "arXiv":
   url: https://arxiv.org/
   color: "#b31b1b"
+
+"HISC":
+  url: https://link.springer.com/journal/13755
+  color: "#785404"
+
+"XoveTIC":
+  url: https://xovetic.citic.udc.es/
+  color: "#4f3151ff"

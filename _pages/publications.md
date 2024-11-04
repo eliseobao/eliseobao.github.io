@@ -3,9 +3,9 @@ layout: page
 permalink: /publications/
 title: publications
 # description: See updated list on <a href="https://scholar.google.com/citations?user=evKkNoMAAAAJ&hl">Google Scholar</a>.
-years: [2022, 2023]
-categories: ['preprints', 'theses']
-catprint: ['','preprints', 'theses']
+years: [2022, 2023, 2024]
+categories: ['conferences', 'journals', 'theses']
+catprint: ['', 'conferences', 'journals', 'theses']
 nav: true
 ---
 

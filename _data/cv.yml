@@ -12,9 +12,15 @@
   type: time_table
   contents:
 
-    - title: Master's Degree in Computer Science
+    - title: Ph.D. in Computer Science
       institution: University of A Coruña, Galicia, Spain
       year: Present
+      description:
+        - <a href="https://estudos.udc.es/en/study/detail/5009v01">Programs's official site</a>
+
+    - title: Master's Degree in Computer Science
+      institution: University of A Coruña, Galicia, Spain
+      year: 2024
       description:
         - <a href="https://estudos.udc.es/en/study/detail/4502v02">Degree's official site</a>
 
@@ -74,12 +80,15 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2024
+      items: 
+        - CICAS-Sngular Award at the VII XoveTIC Congress for the best work in line with best practices for Open Science, Open Data, Open Access and Open Source <a href="/assets/pdf/award_xovetic_cert.pdf">[Certification]</a> <a href="https://citic.udc.es/en/the-seventh-edition-of-the-xovetic-congress-concludes-with-a-48-increase-in-the-number-of-submitted-papers/">[Publication]</a>
+    - year: 2023
+      items: 
+        - B.Sc. thesis category award in the 1st edition of the "Tell me about your research" competition organised by the University of A Coruña <a href="/assets/pdf/award_tellme_cert.pdf">[Certification]</a> <a href="https://www.youtube.com/watch?v=q3YLHqj4Qng">[YoutTube video]</a>
     - year: 2022
       items: 
         - Finalist in the 15th edition of the Best Open Source University Project Award organised by the CIXUG Consortium <a href="https://www.cixug.gal/?noticias=2022-osl-osl-award-winner&lang=en">[Publication]</a>
-    - year: 2023
-      items: 
-        - B.Sc. thesis category award in the 1st edition of the "Tell me about your research" competition organised by the University of A Coruña <a href="/assets/pdf/award_cert.pdf">[Certification]</a> <a href="https://www.youtube.com/watch?v=q3YLHqj4Qng">[YoutTube video]</a>
 
 - title: Academic Interests
   type: nested_list
