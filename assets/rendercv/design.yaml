@@ -1,7 +1,38 @@
 # for more options, see https://docs.rendercv.com/user_guide/yaml_input_structure/design/
+#
+# Theme: engineeringresumes (RenderCV's own ATS-oriented preset) rather than
+# "classic". Verified empirically (pypdf text extraction) that classic's
+# two-column date-badge layout puts each entry's date AFTER its bullets in the
+# PDF's text stream instead of right after the title line, and adds "2 years"/
+# "3 months" duration text that isn't useful to an ATS parser. This theme puts
+# "Title, Org -- Location    DATE" on one line per entry (matching standard
+# ATS-friendly resume conventions) and turns off those duration spans.
+#
+# Overrides below the theme preset are purely cosmetic (alignment, spacing,
+# color) - none of them change text content or reading order, so they don't
+# affect ATS parsing:
+# - alignment: left - the preset's default "justified" stretches word spacing
+#   unevenly on the narrow single-line entry titles (e.g. "Visiting Researcher,
+#   Natural Language Processing Group, University of Sheffield"), which reads
+#   as sloppy. Left alignment keeps even spacing throughout.
+# - space_between_regular_entries tightened slightly (1.2em -> 1em) to pull a
+#   two-line Languages widow back from a near-empty trailing 4th page onto
+#   page 3.
+# - a single muted navy accent (name/section titles/links) instead of the
+#   preset's flat all-black, matching the restrained color accents typical of
+#   academic CV templates while staying print- and ATS-safe (color is a
+#   rendering detail, not part of the extracted text layer).
 design:
-  theme: classic
+  theme: engineeringresumes
   page:
     size: a4
     show_footer: false
     show_top_note: false
+  typography:
+    alignment: left
+  sections:
+    space_between_regular_entries: 1em
+  colors:
+    name: rgb(0, 51, 102)
+    section_titles: rgb(0, 51, 102)
+    links: rgb(0, 51, 102)
