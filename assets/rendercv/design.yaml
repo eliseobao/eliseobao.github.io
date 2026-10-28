@@ -9,12 +9,24 @@
 # ATS-friendly resume conventions) and turns off those duration spans.
 #
 # Overrides below the theme preset are purely cosmetic (alignment, spacing,
-# color) - none of them change text content or reading order, so they don't
-# affect ATS parsing:
+# color, rules, bullets) - none of them change text content or reading order,
+# so they don't affect ATS parsing:
 # - alignment: left - the preset's default "justified" stretches word spacing
 #   unevenly on the narrow single-line entry titles (e.g. "Visiting Researcher,
 #   Natural Language Processing Group, University of Sheffield"), which reads
 #   as sloppy. Left alignment keeps even spacing throughout.
+# - section_titles.type: with_partial_line - the preset's default
+#   "with_full_line" puts the section title on its own line, then a full-width
+#   rule on the line below it. Repeated across 9 sections that reads as a
+#   striped, bureaucratic form rather than an academic CV. "with_partial_line"
+#   puts a short rule next to the title on the *same* line instead, which is
+#   both the more conventional academic-CV look and more compact (no extra
+#   line per section), buying back vertical room used below for line_spacing.
+# - typography.line_spacing nudged up slightly (0.6em -> 0.68em) for a more
+#   open, less cramped body text, using the room freed up above.
+# - highlights.bullet/nested_bullet: the preset's "●" (heavy filled circle) is
+#   swapped for the classic, lighter "•" - a smaller visual accent more in
+#   keeping with an academic CV's restrained tone.
 # - space_between_regular_entries tightened slightly (1.2em -> 1em) to pull a
 #   two-line Languages widow back from a near-empty trailing 4th page onto
 #   page 3.
@@ -30,8 +42,15 @@ design:
     show_top_note: false
   typography:
     alignment: left
+    line_spacing: 0.68em
+  section_titles:
+    type: with_partial_line
   sections:
     space_between_regular_entries: 1em
+  entries:
+    highlights:
+      bullet: "•"
+      nested_bullet: "•"
   colors:
     name: rgb(0, 51, 102)
     section_titles: rgb(0, 51, 102)
