@@ -1,0 +1,306 @@
+cv:
+  name: Eliseo Bao
+  headline: Ph.D. Student in Computer Science
+  email: eliseo.bao@udc.es
+  location: A Coruña, Galicia, Spain
+  website: https://eliseobao.github.io
+
+  social_networks:
+    - network: GitHub
+      username: eliseobao
+    - network: LinkedIn
+      username: eliseobao
+    - network: ORCID
+      username: 0009-0000-8457-1115
+    - network: Google Scholar
+      username: evKkNoMAAAAJ
+
+  sections:
+    Research Interests:
+      - bullet: "**NLP for Mental Health** — detecting and explaining depression-related symptoms in social media using clinical frameworks such as the DSM-5 and BDI-II."
+      - bullet: "**Explainable AI** — developing interpretable methods and clinically grounded explanations for mental-health assessment."
+      - bullet: "**Conversational AI** — building conversational agents that support clinicians in reviewing and assessing mental-health information."
+      - bullet: "**Persona Simulation and Evaluation** — evaluating how faithfully LLM-based personas simulate real users for mental-health research."
+      - bullet: "**Multilingual NLP** — adapting language models to underrepresented languages, including Galician."
+
+    Education:
+      # Start year inferred from the "Predoctoral Fellow" entry below (same institution,
+      # same 2024 start) — the original data only recorded "year: Present" here, with no
+      # explicit start year of its own. Confirm this is correct.
+      - institution: University of A Coruña
+        location: Galicia, Spain
+        degree: Ph.D.
+        area: Computer Science
+        start_date: 2024
+        end_date: present
+
+      - institution: University of A Coruña
+        location: Galicia, Spain
+        degree: M.Sc.
+        area: Computer Science
+        date: 2024
+        highlights:
+          - "Extraordinary Master's Award, 2023/2024 cohort."
+          - "Master's thesis awarded highest honors (Matrícula de Honor)."
+
+      - institution: University of A Coruña
+        location: Galicia, Spain
+        degree: B.Sc.
+        area: Computer Science
+        date: 2022
+        highlights:
+          - "Bachelor's thesis awarded highest honors (Matrícula de Honor), 9.5/10."
+
+      - institution: IES San Clemente
+        location: Galicia, Spain
+        degree: Tech.
+        area: Application Development
+        date: 2018
+
+    Experience:
+      - company: Universidade da Coruña
+        position: Predoctoral Fellow
+        start_date: 2024
+        end_date: present
+        highlights:
+          - Xunta de Galicia Predoctoral Grant ED481A-2024-079.
+
+      - company: Natural Language Processing Group, University of Sheffield
+        position: Visiting Researcher
+        location: Sheffield, UK
+        start_date: 2025-10
+        end_date: 2025-12
+        highlights:
+          - Hosted by Dr. Xi Wang; work on LLM persona simulation led to the Eval4Sim paper (CIKM 2026).
+
+      - company: CITIC Centro de Investigacion TIC - Universidade da Coruña
+        position: Research Assistant
+        start_date: 2023
+        end_date: 2024
+        highlights:
+          - Working at the Information Retrieval Lab (IRLab) within the project PLEC2021-007662 Big-eRisk Early Prediction of Personal Risks on Massive Data funded by MCIN/AEI/10.13039/501100011033 and by the European Union NextGenerationEU/PRTR.
+
+      - company: ITG Instituto Tecnológico de Galicia
+        position: Internship
+        start_date: 2022
+        end_date: 2023
+        highlights:
+          - Contributed to the CEL.IA group, developing NLP solutions, with a focus on the ASR research line.
+
+      - company: NATICA, SISTEMAS DE INFORMACION SL
+        position: Apprenticeship
+        start_date: 2018
+        end_date: 2018
+
+    # NOTE on redundant fields below (publisher/summary/url on Publications, title/awarder
+    # on Awards): al_folio_cv's website templates (cv/publications.liquid, cv/awards.liquid)
+    # were written against JSONResume-style field names and never fully reconciled with
+    # RenderCV's actual schema (PublicationEntry has `title`+`authors`+`journal`+`doi`, not
+    # `publisher`/`summary`/`url`; NormalEntry has `name`, not `title`/`awarder`). RenderCV's
+    # own entry models tolerate extra keys, so these are added purely so the *website* CV
+    # page (not the PDF, which reads the real fields directly) shows authors/venue/links and
+    # award names correctly. See al_folio_cv issue tracker before removing if this gets fixed
+    # upstream.
+    Publications:
+      - title: "Eval4Sim: An Evaluation Framework for Persona Simulation"
+        authors:
+          - "**Eliseo Bao**"
+          - Anxo Pérez
+          - Javier Parapar
+          - Xi Wang
+        journal: "Proc. of the 35th ACM Int'l Conference on Information and Knowledge Management (CIKM 2026), Rome, Italy. Forthcoming"
+        doi: 10.1145/3799682.3840172
+        date: 2026-11
+        publisher: "Proc. of the 35th ACM Int'l Conference on Information and Knowledge Management (CIKM 2026), Rome, Italy. Forthcoming"
+        summary: "Introduces a three-dimensional framework (adherence, consistency, naturalness) for evaluating how well LLM personas simulate human conversation."
+        url: https://doi.org/10.1145/3799682.3840172
+
+      - title: Improving clinical reliability of LLM reasoning for depression assessment via structured generation and GRPO
+        authors:
+          - "**Eliseo Bao**"
+          - Anxo Pérez
+          - Javier Parapar
+        journal: Science Progress, 109(3)
+        doi: 10.1177/00368504261467483
+        date: 2026-07
+        publisher: Science Progress, 109(3)
+        summary: "Shows GRPO-trained LLMs can explain depression-screening decisions through DSM-5-aligned reasoning without sacrificing classification accuracy."
+        url: https://doi.org/10.1177/00368504261467483
+
+      - title: Learning Evidence of Depression Symptoms via Prompt Induction
+        authors:
+          - "**Eliseo Bao**"
+          - Anxo Pérez
+          - David Otero
+          - Javier Parapar
+        journal: "Proc. of the 49th International ACM SIGIR Conference (SIGIR 2026), Melbourne, Australia"
+        doi: 10.1145/3805712.3809873
+        date: 2026-07
+        publisher: "Proc. of the 49th International ACM SIGIR Conference (SIGIR 2026), Melbourne, Australia"
+        summary: "Proposes Symptom Induction, compressing labeled examples into interpretable guidelines that improve LLM classification of depressive symptoms."
+        url: https://doi.org/10.1145/3805712.3809873
+
+      - title: How does depression talk on social media? Modeling depression language with relevance-based statistical language models
+        authors:
+          - "**Eliseo Bao**"
+          - Anxo Pérez
+          - David Otero
+          - Javier Parapar
+        journal: "Online Social Networks and Media, 50, 100339"
+        doi: 10.1016/j.osnem.2025.100339
+        date: 2025-12
+        publisher: "Online Social Networks and Media, 50, 100339"
+        summary: "Builds relevance-based statistical language models of depression-related language to rank users by risk across Reddit and Twitter."
+        url: https://doi.org/10.1016/j.osnem.2025.100339
+
+      - title: "ReDSM5: A Reddit Dataset for DSM-5 Depression Detection"
+        authors:
+          - "**Eliseo Bao**"
+          - Anxo Pérez
+          - Javier Parapar
+        journal: "Proc. of the 34th ACM Int'l Conference on Information and Knowledge Management (CIKM 2025), Seoul, Republic of Korea"
+        doi: 10.1145/3746252.3761610
+        date: 2025-11
+        publisher: "Proc. of the 34th ACM Int'l Conference on Information and Knowledge Management (CIKM 2025), Seoul, Republic of Korea"
+        summary: "A 1,484-post Reddit dataset with sentence-level, clinician-annotated DSM-5 depressive-symptom labels and rationales."
+        url: https://doi.org/10.1145/3746252.3761610
+
+      - title: Towards Explainable and Safe Systems for Health Data
+        authors:
+          - "**Eliseo Bao**"
+        journal: "SIGIR 2025 Doctoral Consortium, Padua, Italy"
+        doi: 10.1145/3726302.3730121
+        date: 2025-07
+        publisher: "SIGIR 2025 Doctoral Consortium, Padua, Italy"
+        summary: "Doctoral consortium paper outlining a research plan for transparent, explainable, and safe health information systems."
+        url: https://doi.org/10.1145/3726302.3730121
+
+      - title: "MindWell: A Conversational Agent for Professional Depression Screening on Social Media"
+        authors:
+          - "**Eliseo Bao**"
+          - Anxo Pérez
+          - Javier Parapar
+        journal: "Advances in Information Retrieval — ECIR 2025, LNCS, Part V, pp. 47-52, Lucca, Italy"
+        doi: 10.1007/978-3-031-88720-8_9
+        date: 2025-04
+        publisher: "Advances in Information Retrieval — ECIR 2025, LNCS, Part V, pp. 47-52, Lucca, Italy"
+        summary: "Demonstrates an open-source RAG chatbot that helps clinicians review social media history for BDI-II depressive symptoms."
+        url: https://doi.org/10.1007/978-3-031-88720-8_9
+
+      - title: Explainable depression symptom detection in social media
+        authors:
+          - "**Eliseo Bao**"
+          - Anxo Pérez
+          - Javier Parapar
+        journal: "Health Information Science and Systems, 12(1), 47"
+        doi: 10.1007/s13755-024-00303-9
+        date: "2024-09-06"
+        publisher: "Health Information Science and Systems, 12(1), 47"
+        summary: "Transformer-based models that both detect and explain depressive symptom markers in social media text."
+        url: https://doi.org/10.1007/s13755-024-00303-9
+
+      - title: Adapting Large Language Models for Underrepresented Languages
+        authors:
+          - "**Eliseo Bao**"
+          - Anxo Pérez
+          - Javier Parapar
+        journal: "VII Congreso XoveTIC, Universidade da Coruña — CICAS-Sngular Award"
+        date: 2024
+        publisher: "VII Congreso XoveTIC, Universidade da Coruña — CICAS-Sngular Award"
+        summary: "Introduces a Galician-adapted Llama 3.1 model and instruction dataset, outperforming the base model and another Galician model."
+
+      - title: "MindWell: an open-source chatbot to assist in the detection and monitoring of depressive disorders"
+        authors:
+          - "**Eliseo Bao**"
+        journal: M.Sc. Thesis, Universidade da Coruña
+        date: 2024
+        publisher: M.Sc. Thesis, Universidade da Coruña
+        summary: "Designed and evaluated the MindWell chatbot with a professional psychologist."
+
+      - title: Ranking of Reddit users using Relevance Models for depressive disorders
+        authors:
+          - "**Eliseo Bao**"
+        journal: B.Sc. Thesis, Universidade da Coruña
+        date: 2022
+        publisher: B.Sc. Thesis, Universidade da Coruña
+        summary: "Built depression-risk vocabularies and ranking methods from Reddit using relevance-based language models."
+
+    Honors, Awards and Scholarships:
+      - name: Extraordinary Master's Award
+        title: Extraordinary Master's Award
+        awarder: Universidade da Coruña
+        date: 2025
+        summary: "M.Sc. in Computer Engineering, 2023/2024 cohort."
+
+      - name: CICAS-Sngular Award
+        title: CICAS-Sngular Award
+        awarder: VII XoveTIC Congress
+        date: 2024
+        summary: >
+          Awarded for the best work in line with best practices for Open Science, Open Data,
+          Open Access and Open Source. [Certification](/assets/pdf/award_xovetic_cert.pdf) ·
+          [Publication](https://citic.udc.es/en/the-seventh-edition-of-the-xovetic-congress-concludes-with-a-48-increase-in-the-number-of-submitted-papers/)
+
+      - name: B.Sc. thesis category award
+        title: B.Sc. thesis category award
+        awarder: 1st edition of the "Tell me about your research" competition, University of A Coruña
+        date: 2023
+        summary: >
+          [Certification](/assets/pdf/award_tellme_cert.pdf) · [YouTube video](https://www.youtube.com/watch?v=q3YLHqj4Qng)
+
+      - name: "Finalist, Best Open Source University Project Award"
+        title: "Finalist, Best Open Source University Project Award"
+        awarder: 15th edition, CIXUG Consortium
+        date: 2022
+        summary: >
+          [Publication](https://www.cixug.gal/?noticias=2022-osl-osl-award-winner&lang=en)
+
+      - name: Departmental Collaboration Scholarship
+        title: Departmental Collaboration Scholarship
+        awarder: Universidade da Coruña
+        date: 2021
+        summary: "Department of Computer Science and Information Technologies, November 2020–May 2021."
+
+    Talks:
+      - bullet: '**28 October 2026** — "Artificial Intelligence and Mental Health: What Can Social Media Tell Us?", with Anxo Pérez Vila, 12th Healthy October programme, Faculty of Computer Science, Universidade da Coruña.'
+      - bullet: '**19 May 2026** — "Explainable AI for Depression Symptom Detection on Social Media," invited talk, International University of La Rioja (UNIR).'
+      - bullet: '**13 February 2026** — "Explainable depression symptom detection in social media," 2nd Symposium on Mental Health and Artificial Intelligence, Université de Caen Normandie, France.'
+
+    Program Committees & Reviewing:
+      - bullet: "**2027 (upcoming)** — Program Committee, ECIR 2027 (Resource Papers track)."
+      - bullet: "**2027 (upcoming)** — Reviewer, WWW 2027 (full papers)."
+      - bullet: "**2026** — Program Committee, CIKM 2026 (Resources track; Short Papers track)."
+      - bullet: "**2026** — Program Committee, CLEF 2026 (eRisk Lab)."
+      - bullet: "**2026** — Reviewer, SIGIR 2026 (full papers)."
+      - bullet: "**2026** — Reviewer, Journal of Intelligent & Fuzzy Systems."
+      - bullet: "**2026** — Reviewer, Language Resources and Evaluation (Springer)."
+      - bullet: "**2026** — Reviewer, PLOS Digital Health."
+      - bullet: "**2025** — Program Committee, CIKM 2025 (Resource Papers track)."
+      - bullet: "**2025** — Program Committee, CLEF 2025 (eRisk: Early Risk Prediction on the Internet)."
+      - bullet: "**2025** — Reviewer, SIGIR 2025 (subreviewer / external reviewer)."
+      - bullet: "**2025** — Reviewer, Digital Health (SAGE)."
+      - bullet: "**2025** — Reviewer, Health Information Science and Systems (Springer)."
+      - bullet: "**2025** — Reviewer, IEEE Transactions on Affective Computing."
+      - bullet: "**2024** — Reviewer, Health Information Science and Systems (Springer)."
+
+    Supervision and Mentoring:
+      - bullet: "**2026** — Co-supervised 2 bachelor's theses and 1 master's thesis."
+      - bullet: "**21–22 October 2026** — Mentor, Datathon Justicia, Challenge 2: Childhood and Youth."
+      - bullet: "**2025** — Co-supervised 1 bachelor's thesis and 2 master's theses."
+      - bullet: "**2024** — Co-supervised 1 bachelor's thesis."
+      - bullet: "**2020–2021** — Student mentor, Student Mentoring Programme (PAT), Faculty of Computer Science, Universidade da Coruña, both semesters."
+
+    Outreach:
+      - bullet: "**25 September 2026** — Outreach participant, G-Night / European Researchers' Night, Universidade da Coruña."
+      - bullet: "**2026** — Participation in the DAFIC Research Fair, Faculty of Computer Science, Universidade da Coruña."
+
+    Academic Training:
+      - bullet: "**2025** — 16th European Summer School on Information Retrieval ([ESSIR 2025](https://2025.essir.eu/)), University of Wolverhampton, UK."
+
+    Languages:
+      - name: Galician
+        summary: Native
+      - name: Spanish
+        summary: Native
+      - name: English
+        summary: Professional working proficiency

@@ -1,0 +1,9 @@
+nbconvert
+pyyaml
+rendercv[full]
+scholarly
+# scholarly's own dependency on bibtexparser is unpinned, so pip resolves the
+# latest bibtexparser 2.x, which removed the `bibtexparser.bibdatabase` module
+# scholarly imports internally (ModuleNotFoundError, breaks the citations
+# pipeline). Pin it ourselves to keep the 1.x API scholarly expects.
+bibtexparser<2

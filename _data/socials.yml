@@ -1,0 +1,8 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+email: eliseo.bao@udc.es # your email address (protect_email: true in _config.yml keeps this from being scraped)
+github_username: eliseobao
+linkedin_username: eliseobao
+scholar_userid: evKkNoMAAAAJ # your Google Scholar ID
+dblp_url: https://dblp.org/pid/359/3295

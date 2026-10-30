@@ -1,0 +1,42 @@
+"AJP":
+  url: https://aapt.scitation.org/journal/ajp
+  color: "#00369f"
+
+"PhysRev":
+  url: https://journals.aps.org/
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"
+
+"HISC":
+  url: https://link.springer.com/journal/13755
+  color: "#785404"
+
+"XoveTIC":
+  url: https://xovetic.citic.udc.es/
+  color: "#4f3151ff"
+
+"ECIR":
+  url: https://link.springer.com/conference/ecir
+  color: "#1a7a4c"
+
+"SIGIR":
+  url: https://dl.acm.org/conference/sigir
+  color: "#0f6ab4"
+
+"SIGIR-DC":
+  url: https://dl.acm.org/conference/sigir
+  color: "#8a1538"
+
+"CIKM":
+  url: https://dl.acm.org/conference/cikm
+  color: "#6b4226"
+
+"OSNEM":
+  url: https://www.sciencedirect.com/journal/online-social-networks-and-media
+  color: "#e67e22"
+
+"SciProg":
+  url: https://journals.sagepub.com/home/sci
+  color: "#c0392b"
